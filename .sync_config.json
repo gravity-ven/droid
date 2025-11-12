@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "auto_commit": true,
+  "commit_prefix": "Auto-sync",
+  "sync_interval": 600,
+  "last_sync": "2025-11-12T15:20:49.794386",
+  "retry_count": 0
+}

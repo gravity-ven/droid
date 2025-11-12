@@ -1,0 +1,121 @@
+// Factory CLI Settings
+// This file contains your Factory CLI configuration with Claude integration.
+{
+  "model": "glm-4.6",
+  "reasoningEffort": "medium",
+  "cloudSessionSync": true,
+  "diffMode": "github",
+  "ideExtensionPromptedAt": "SPARTAN",
+  "autonomyMode": "auto-high",
+  "ideActivationNudgedForVersion": {},
+  "enableCompletionBell": false,
+  "completionSound": "off",
+  "completionSoundFocusMode": "always",
+  // Commands that will be automatically allowed without confirmation.
+  // Add commands here that you trust and use frequently.
+  // Examples: "npm test", "git commit", "yarn build"
+  "commandAllowlist": [
+    "ls",
+    "pwd",
+    "dir",
+    "jq",
+    "python3",
+    "python"
+  ],
+  // Commands that will ALWAYS require confirmation, regardless of autonomy level.
+  // These are dangerous commands that could cause data loss or system damage.
+  // Add any additional dangerous commands specific to your environment.
+  "commandDenylist": [
+    "rm -rf /",
+    "rm -rf /*",
+    "rm -rf .",
+    "rm -rf ~",
+    "rm -rf ~/*",
+    "rm -rf $HOME",
+    "rm -r /",
+    "rm -r /*",
+    "rm -r ~",
+    "rm -r ~/*",
+    "mkfs",
+    "mkfs.ext4",
+    "mkfs.ext3",
+    "mkfs.vfat",
+    "mkfs.ntfs",
+    "dd if=/dev/zero of=/dev",
+    "dd of=/dev",
+    "shutdown",
+    "reboot",
+    "halt",
+    "poweroff",
+    "init 0",
+    "init 6",
+    ":(){ :|: & };:",
+    ":() { :|:& };:",
+    "chmod -R 777 /",
+    "chmod -R 000 /",
+    "chown -R",
+    "format",
+    "powershell Remove-Item -Recurse -Force"
+  ],
+  "enableCustomDroids": true,
+  "includeCoAuthoredByDroid": true,
+  "enableDroidShield": true,
+  "enableReadinessReport": false,
+  "todoDisplayMode": "pinned",
+  // Claude Integration Settings
+  "claudeIntegration": {
+    "enabled": true,
+    "watcherSystem": {
+      "enabled": true,
+      "watcherPath": "~/.factory/watchers",
+      "pollInterval": 5,
+      "maxWaitTime": 604800
+    },
+    "agents": {
+      "enabled": true,
+      "agentPath": "~/.factory/agents",
+      "metaOrchestratorEnabled": true
+    },
+    "skills": {
+      "enabled": true,
+      "skillPath": "~/.factory/skills"
+    }
+  },
+  // TOON Integration DNA - Core System Integration with Claude Repository DNA
+  "toonIntegration": {
+    "enabled": true,
+    "coreSystem": true,
+    "autoConvert": true,
+    "minSavingsPercent": 15,
+    "optimizePrompts": true,
+    "optimizeResponses": true,
+    "optimizeConfigs": true,
+    "optimizeLogs": true,
+    "tokenAware": true,
+    "intelligentTruncation": true,
+    "contextOptimization": true,
+    "agentInterception": true,
+    "nestedLearning": true,
+    "claudeRepositoryDNA": {
+      "enabled": true,
+      "integratedAgencies": [
+        "ai_agency_trading_agent",
+        "claude_watcher_system_agent"
+      ],
+      "integratedSkills": [
+        "claude_negotiation_skill"
+      ],
+      "DNAIntegrationLevel": "deep",
+      "repositoriesIntegrated": [
+        "gravity-ven/ai_agency",
+        "gravity-ven/Claude_Code",
+        "gravity-ven/ai_agency_claude"
+      ],
+      "lastIntegration": "2025-11-15T15:06:00Z",
+      "nestedLearningDNA": true,
+      "teamDecisionEnhancement": true,
+      "watcherSystemIntegration": true,
+      "negotiationSkillIntegration": true
+    }
+  }
+}
