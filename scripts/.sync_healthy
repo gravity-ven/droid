@@ -1,0 +1,8 @@
+# Sync status indicator file
+# This file indicates that the auto-sync system is healthy
+# Created: 2025-11-14
+# Last updated: 2025-11-14
+
+STATUS=HEALTHY
+LAST_CHECK=2025-11-14
+GITHUB_REPO=https://github.com/gravity-ven/Droid_Settings.git

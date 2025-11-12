@@ -1,0 +1,144 @@
+#!/bin/bash
+# Setup script for Claude autonomous management
+
+# Colors
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m'
+
+echo -e "${GREEN}Setting up Claude Autonomous Management${NC}"
+
+# Paths
+FACTORY_PATH="$HOME/.factory"
+CLAUDE_PATH="$HOME/.claude"
+
+# Install dependencies
+echo "Checking dependencies..."
+python3 -c "import watchdog" 2>/dev/null || {
+    echo -e "${YELLOW}Installing watchdog for file monitoring...${NC}"
+    pip3 install --user watchdog
+}
+
+# Create necessary directories
+echo "Creating directory structure..."
+mkdir -p "$CLAUDE_PATH/.claude/hooks"
+mkdir -p "$CLAUDE_PATH/.claude/agents"
+mkdir -p "$CLAUDE_PATH/.claude/skills"
+mkdir -p "$CLAUDE_PATH/.claude/watchers"
+mkdir -p "$CLAUDE_PATH/histories"
+mkdir -p "$CLAUDE_PATH/state"
+mkdir -p "$CLAUDE_PATH/backups"
+
+# Make scripts executable
+chmod +x "$FACTORY_PATH/agents/claude_factory_sync.py"
+chmod +x "$FACTORY_PATH/agents/claude_autonomous_manager.py"
+
+# Create startup scripts
+cat > "$FACTORY_PATH/bin/start_claude_sync.sh" << 'EOF'
+#!/bin/bash
+# Start Claude-Factory bidirectional sync
+python3 "$HOME/.factory/agents/claude_factory_sync.py" &
+DAEMON_PID=$!
+echo "Started Claude-Factory sync daemon with PID: $DAEMON_PID"
+echo $DAEMON_PID > "$HOME/.factory/logs/claude_sync_daemon.pid"
+EOF
+
+chmod +x "$FACTORY_PATH/bin/start_claude_sync.sh"
+
+cat > "$FACTORY_PATH/bin/start_claude_autonomous.sh" << 'EOF'
+#!/bin/bash
+# Start Claude autonomous manager
+python3 "$HOME/.factory/agents/claude_autonomous_manager.py"
+EOF
+
+chmod +x "$FACTORY_PATH/bin/start_claude_autonomous.sh"
+
+cat > "$FACTORY_PATH/bin/stop_claude_sync.sh" << 'EOF'
+#!/bin/bash
+# Stop Claude-Factory sync daemon
+if [ -f "$HOME/.factory/logs/claude_sync_daemon.pid" ]; then
+    PID=$(cat "$HOME/.factory/logs/claude_sync_daemon.pid")
+    kill $PID 2>/dev/null
+    rm "$HOME/.factory/logs/claude_sync_daemon.pid"
+    echo "Stopped Claude-Factory sync daemon (PID: $PID)"
+else
+    echo "Claude-Factory sync daemon not running"
+fi
+EOF
+
+chmod +x "$FACTORY_PATH/bin/stop_claude_sync.sh"
+
+# Setup cron jobs for Claude autonomous management
+echo "Setting up Claude autonomous cron jobs..."
+
+CLAUDE_CRON_ENTRY=$(cat << 'EOF'
+# Claude Autonomous Management
+*/10 * * * * $HOME/.factory/bin/start_claude_autonomous.sh > $HOME/.factory/logs/claude_autonomous_cron.log 2>&1
+@reboot $HOME/.factory/bin/start_claude_sync.sh > $HOME/.factory/logs/claude_sync_startup.log 2>&1
+EOF
+)
+
+# Add to crontab
+(crontab -l 2>/dev/null | grep -v "Claude Autonomous Management"; echo "$CLAUDE_CRON_ENTRY") | crontab -
+
+# Create macOS LaunchAgent for Claude sync
+LAUNCH_AGENT_FILE="$HOME/Library/LaunchAgents/com.factory.claude-factory-sync.plist"
+
+cat > "$LAUNCH_AGENT_FILE" << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.factory.claude-factory-sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>$FACTORY_PATH/agents/claude_factory_sync.py</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>$FACTORY_PATH/logs/claude_factory_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>$FACTORY_PATH/logs/claude_factory_stderr.log</string>
+</dict>
+</plist>
+EOF
+
+# Load the LaunchAgent
+launchctl load "$LAUNCH_AGENT_FILE" 2>/dev/null || echo "LaunchAgent created manually"
+
+# Stop any existing Claude-only sync (we want bidirectional)
+pkill -f "auto_sync_daemon.py" 2>/dev/null || true
+
+# Start the new bidirectional sync
+echo -e "${GREEN}Starting Claude-Factory bidirectional sync...${NC}"
+"$FACTORY_PATH/bin/start_claude_sync.sh"
+
+# Test the autonomous manager
+echo -e "${GREEN}Testing Claude autonomous manager...${NC}"
+"$FACTORY_PATH/bin/start_claude_autonomous.sh"
+
+# Show status
+echo ""
+echo -e "${GREEN}Claude Autonomous Management Setup Complete!${NC}"
+echo ""
+echo "Commands:"
+echo "  Start sync: $FACTORY_PATH/bin/start_claude_sync.sh"
+echo "  Stop sync:  $FACTORY_PATH/bin/stop_claude_sync.sh"
+echo "  Run manager: $FACTORY_PATH/bin/start_claude_autonomous.sh"
+echo ""
+echo "Logs:"
+echo "  Sync log:        $FACTORY_PATH/logs/claude_factory_sync.log"
+echo "  Manager log:     $FACTORY_PATH/logs/claude_autonomous_manager.log"
+echo "  Cron log:        $FACTORY_PATH/logs/claude_autonomous_cron.log"
+echo ""
+echo "Status Reports:"
+echo "  Claude status:   $CLAUDE_PATH/state/status_report.json"
+echo "  Factory status:  $FACTORY_PATH/logs/update_history.json"
+echo ""
+echo -e "${GREEN}Claude-Factory bidirectional sync and autonomous management are now active!${NC}"

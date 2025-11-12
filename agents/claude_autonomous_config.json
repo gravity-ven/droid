@@ -1,0 +1,27 @@
+{
+  "auto_cleanup": true,
+  "backup_enabled": true,
+  "max_backups": 10,
+  "cleanup_interval": 86400,
+  "stats_tracking": true,
+  "health_checks": true,
+  "auto_optimize": true,
+  "sync_priority": "bidirectional",
+  "sync_settings": {
+    "real_time_sync": true,
+    "conflict_resolution": "factory_priority",
+    "backup_conflicts": true
+  },
+  "cleanup_patterns": [
+    "*.tmp",
+    "*.temp", 
+    "*.bak",
+    "*.old",
+    "*.log.backup"
+  ],
+  "protected_files": [
+    "settings.json",
+    "auth.json",
+    "session.json"
+  ]
+}

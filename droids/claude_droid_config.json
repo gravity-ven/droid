@@ -1,0 +1,38 @@
+{
+  "name": "Claude Integration Droid",
+  "version": "1.0.0",
+  "description": "Integrates Claude Code capabilities with Droid system",
+  "watchers": {
+    "enabled": true,
+    "scripts": [
+      "parse_claude_output.py",
+      "parse_build_output.py",
+      "parse_test_results.py",
+      "parse_process_output.py"
+    ],
+    "triggers": {
+      "build_complete": "handle_build_result.sh",
+      "test_complete": "handle_test_results.sh",
+      "process_complete": "handle_process_completion.sh"
+    }
+  },
+  "agents": {
+    "metaOrchestrator": "meta_orchestrator_server.py",
+    "autoSync": "auto_sync_settings.sh",
+    "projectAnalyzer": "project-analyzer.sh",
+    "validator": "validate.sh"
+  },
+  "skills": {
+    "buildManagement": "Build result parsing and handling",
+    "testAnalysis": "Test result parsing and reporting",
+    "processMonitoring": "Background process monitoring",
+    "settingsSync": "Automatic settings synchronization",
+    "projectAnalysis": "Project structure analysis"
+  },
+  "settings": {
+    "logLevel": "INFO",
+    "maxConcurrentProcesses": 5,
+    "timeoutSeconds": 604800,
+    "enableNotifications": true
+  }
+}

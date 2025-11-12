@@ -1,0 +1,22 @@
+{
+  "enabled": true,
+  "auto_convert": true,
+  "min_savings_percent": 20,
+  "optimize_logs": true,
+  "optimize_prompts": true,
+  "optimize_configs": true,
+  "preserve_files": true,
+  "target_extensions": [".json", ".log", ".config"],
+  "excluded_patterns": ["settings.json", "auth.json", "mcp.json"],
+  "sync_priorities": {
+    "high": ["*.json", "*.config"],
+    "medium": ["*.log"],
+    "low": ["*.tmp"]
+  },
+  "optimization_settings": {
+    "max_file_size_mb": 50,
+    "min_savings_tokens": 10,
+    "recursive_search": true,
+    "backup_original_files": true
+  }
+}

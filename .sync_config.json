@@ -1,8 +1,1 @@
-{
-  "enabled": true,
-  "auto_commit": true,
-  "commit_prefix": "Auto-sync",
-  "sync_interval": 600,
-  "last_sync": "2025-11-12T15:20:49.794386",
-  "retry_count": 0
-}
+{"enabled": true, "auto_commit": true, "commit_prefix": "Auto-sync factory directory", "sync_interval": 600, "last_sync": "2025-11-12T15:20:49.794386", "retry_count": 0, "sync_subdirectories": true, "include_patterns": ["*"], "exclude_patterns": [".git", "node_modules", "*.tmp"]}

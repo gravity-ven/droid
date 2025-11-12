@@ -1,0 +1,476 @@
+[
+  {
+    "command": "install claude code on this machine",
+    "timestamp": "2025-11-11T11:52:47.050Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add it to the path and source it",
+    "timestamp": "2025-11-11T11:54:05.620Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "install git and github desktop app on this machine",
+    "timestamp": "2025-11-11T11:56:20.256Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "clone all my claude related repositories from my github desktop",
+    "timestamp": "2025-11-12T00:18:30.938Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "gravity-ven",
+    "timestamp": "2025-11-12T00:18:59.756Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "can you take claude repos settings and add it droid in ~/.factory settings like agents, skills meta-orchestrator etc without breaking the code",
+    "timestamp": "2025-11-12T00:20:24.797Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "does it automatically sync any changes?",
+    "timestamp": "2025-11-12T00:22:29.935Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "i want full auto sync and autonomous updates",
+    "timestamp": "2025-11-12T00:23:02.882Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "the same should apply to ~/.claude",
+    "timestamp": "2025-11-12T00:25:29.044Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "can you add using agents for every prompt?",
+    "timestamp": "2025-11-12T00:26:59.095Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "install bmad method from github.",
+    "timestamp": "2025-11-12T00:27:15.715Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add this feature in droid and claude https://dev.to/abhilaksharora/toon-token-oriented-object-notation-the-smarter-lighter-json-for-llms-2f05",
+    "timestamp": "2025-11-12T00:27:49.015Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add this tech into the dna of droid and claude code https://www.marktechpost.com/2025/11/08/nested-learning-a-new-machine-learning-approach-for-continual-learning-that-views-models-as-nested-optimization-problems-to-enhance-long-context-processing/",
+    "timestamp": "2025-11-12T00:28:47.167Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "integrate TOON features into the dna of droid and claude code",
+    "timestamp": "2025-11-12T00:35:41.565Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I don't want miniconda, I want anaconda latest versions installed and added to the path and create a default environment when this machine boots. The default environment is called \"Spartan\".",
+    "timestamp": "2025-11-12T00:38:10.685Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "Does this CLI have parallelization of tasks and agents?",
+    "timestamp": "2025-11-12T00:38:35.689Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "are they all synced to github and to claude code? Droid and Claude Code should have the same settings auto synced and to github",
+    "timestamp": "2025-11-12T00:40:37.859Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "download complete mojo language and ai framework and integrate it to droid and claude code, try and use mojo first if that doesn't support use python.",
+    "timestamp": "2025-11-12T00:41:22.102Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "my github username is: gravity.ven@gmail.com and token is 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",
+    "timestamp": "2025-11-12T00:44:45.356Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "complete all the pending tasks from before",
+    "timestamp": "2025-11-12T01:12:25.610Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "download complete mojo language and ai framework and integrate it to droid and claude code, try and use mojo first if that doesn't support use python.",
+    "timestamp": "2025-11-12T01:12:38.783Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "my github username is: gravity.ven@gmail.com and token is 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",
+    "timestamp": "2025-11-12T01:12:41.286Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "are they all synced to github and to claude code? Droid and Claude Code should have the same settings auto synced and to github",
+    "timestamp": "2025-11-12T01:12:51.742Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "make ghostty, wezterm, alacritty handle AI workloads, memory efficiency and add Solarized OSAKA theme for all the terminals and tabbed features with tmux and also with 16 font size, also add starship.rs to the path by installing it",
+    "timestamp": "2025-11-12T01:21:05.280Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "increase the font size in terminals to 20",
+    "timestamp": "2025-11-12T01:25:14.862Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "set all terminals to have the font size 20",
+    "timestamp": "2025-11-12T03:02:07.123Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "/exit",
+    "timestamp": "2025-11-12T03:03:15.490Z",
+    "type": "slash_command",
+    "mode": "chat"
+  },
+  {
+    "command": "fix all errors in ghostty configuration settings",
+    "timestamp": "2025-11-12T03:04:06.376Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "check all terminals for any settings errors",
+    "timestamp": "2025-11-12T03:06:04.507Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "download https://www.github.com/ryanoasis/nerd-fonts depth=1 and once downloaded, run the install command",
+    "timestamp": "2025-11-12T03:08:15.409Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "refresh all terminals after this task is complete.",
+    "timestamp": "2025-11-12T03:10:29.378Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add nerd fonts to the relevant path",
+    "timestamp": "2025-11-12T03:10:43.611Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "create a directory on github called \"Terminal_Settings\" and push all terminal settings of all terminals in subfolders under Terminal_Settings and auto configure it to downloaded everywhere I am connected with all dependencies.",
+    "timestamp": "2025-11-12T03:13:50.891Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I want a startup script of droid, I want droid to first check for any auto sync from github repositories and automatically update it to the local machine in relevant folders and check the usage of droid tokens and how much is left everytime droid starts.",
+    "timestamp": "2025-11-12T03:17:05.005Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "i want an existing plan on task parallelization and agent parallelization plus the usage of TOON and Nested learning. What is the current situation and how can we make it better?",
+    "timestamp": "2025-11-12T03:17:47.987Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I want TOON from this link integrated into the DNA of droid. https://dev.to/abhilaksharora/toon-token-oriented-object-notation-the-smarter-lighter-json-for-llms-2f05",
+    "timestamp": "2025-11-12T03:20:13.473Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I want nested learning framework integrated into the dna of DROID. use this link. https://www.marktechpost.com/2025/11/08/nested-learning-a-new-machine-learning-approach-for-continual-learning-that-views-models-as-nested-optimization-problems-to-enhance-long-context-processing/",
+    "timestamp": "2025-11-12T03:20:53.985Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I want this adopted into the dna of droid. use this link. https://www.anthropic.com/engineering/code-execution-with-mcp",
+    "timestamp": "2025-11-12T03:24:19.075Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "also integrate this https://www.claude.com/blog/agent-capabilities-api",
+    "timestamp": "2025-11-12T03:24:59.352Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "is mojo being used in droid?",
+    "timestamp": "2025-11-12T03:25:16.952Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what are the current frameworks in droid?",
+    "timestamp": "2025-11-12T03:25:48.702Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add persistent memory bank of all interaction and nested learning to the memory.",
+    "timestamp": "2025-11-12T03:29:45.787Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "reduce terminal flickering to the maximum in all terminals.",
+    "timestamp": "2025-11-12T03:30:13.454Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "continue",
+    "timestamp": "2025-11-12T03:42:03.744Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "fix and continue",
+    "timestamp": "2025-11-12T03:43:38.056Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "find a fix permanently.",
+    "timestamp": "2025-11-12T03:43:59.623Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "repair json parse error.",
+    "timestamp": "2025-11-12T03:44:13.107Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "Error: Floating point NaN (not-a-number) is detected in generation. It's likely a model issue leading to\n   overflow. Please contact Fireworks if it's a Fireworks-hosted model or check your model weights if it's a\n    custom model. - fix it",
+    "timestamp": "2025-11-12T03:44:32.674Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what are the incomplete tasks?",
+    "timestamp": "2025-11-12T03:44:49.892Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "undo json issues.",
+    "timestamp": "2025-11-12T03:44:58.502Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "exit",
+    "timestamp": "2025-11-12T03:45:03.239Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "are there any pending tasks?",
+    "timestamp": "2025-11-12T03:45:20.192Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what are the current frameworks in droid?",
+    "timestamp": "2025-11-12T03:45:38.743Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "do i need to add any of these frameworks above?",
+    "timestamp": "2025-11-12T03:46:33.976Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "do i have TOON and Nested Learning capabilities?",
+    "timestamp": "2025-11-12T03:46:54.049Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "do i have TOON and Nested learning capabilities in my ~/.factory settings?",
+    "timestamp": "2025-11-12T03:47:43.349Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what about task parallalization and agent parallelization?",
+    "timestamp": "2025-11-12T03:49:24.475Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what about nested learning memory bank?",
+    "timestamp": "2025-11-12T03:49:58.871Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "what features can be improved to agents more?",
+    "timestamp": "2025-11-12T03:50:57.057Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "ok go ahead and implement it. How many agents do i have?",
+    "timestamp": "2025-11-12T03:51:43.500Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "search my github respositories on claude code and add the agents from there that were previously used and add all the features and skills to droids.",
+    "timestamp": "2025-11-12T03:52:40.533Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "create a new repo called \"Droid_Settings\" and push all ~/.factory settings to that github repo and auto sync to github",
+    "timestamp": "2025-11-12T03:54:17.367Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "increase the timeout settings to 10 mins",
+    "timestamp": "2025-11-12T03:56:48.640Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "increase the timeout settings to 6 hours",
+    "timestamp": "2025-11-12T03:57:32.877Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "increase the timeout settings to 7 days",
+    "timestamp": "2025-11-12T03:58:08.459Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "exit",
+    "timestamp": "2025-11-12T04:00:49.884Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "define your capabilities",
+    "timestamp": "2025-11-12T04:01:41.379Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "define your local capabilities.",
+    "timestamp": "2025-11-12T04:02:19.487Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "install node npm latest",
+    "timestamp": "2025-11-12T04:02:41.771Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "activate reasoning effort",
+    "timestamp": "2025-11-12T04:03:09.267Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "change ideExtensionPrompt = SPARTAN",
+    "timestamp": "2025-11-12T04:03:46.300Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "go through all claude repos on my github and add all those agents and skills into nested learning dna of droid.",
+    "timestamp": "2025-11-12T04:04:16.132Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "how many agents do i have/",
+    "timestamp": "2025-11-12T04:10:53.753Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "are agents called droids in droid?",
+    "timestamp": "2025-11-12T04:11:29.070Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "can make droids out of my current agents and skills?",
+    "timestamp": "2025-11-12T04:12:13.313Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "is droid_settings updated on github?",
+    "timestamp": "2025-11-12T04:17:41.770Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "add ~/.factory settings to \"droid\" repo on github, do you need any credentials?",
+    "timestamp": "2025-11-12T04:22:13.625Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "it should autosync every 600 seconds",
+    "timestamp": "2025-11-12T04:22:49.728Z",
+    "type": "message",
+    "mode": "chat"
+  },
+  {
+    "command": "I want the entire ~/.factory and its subfolders into \"droid\" folder on github, all of it with autosync feature",
+    "timestamp": "2025-11-12T04:26:02.588Z",
+    "type": "message",
+    "mode": "chat"
+  }
+]

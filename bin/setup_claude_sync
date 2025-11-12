@@ -1,0 +1,143 @@
+#!/bin/bash
+# Setup script for Claude-Droid auto-sync system
+
+# Colors for output
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Paths
+FACTORY_PATH="$HOME/.factory"
+CLAUDE_REPO="$HOME/Desktop/claude-repos/Claude_Code"
+DAEMON_SCRIPT="$FACTORY_PATH/agents/auto_sync_daemon.py"
+UPDATER_SCRIPT="$FACTORY_PATH/agents/autonomous_updater.py"
+
+echo -e "${GREEN}Setting up Claude-Droid Auto-Sync System${NC}"
+
+# Check dependencies
+echo "Checking dependencies..."
+python3 -c "import watchdog" 2>/dev/null || {
+    echo -e "${YELLOW}Installing watchdog for file monitoring...${NC}"
+    pip3 install --user watchdog
+}
+
+python3 -c "import requests" 2>/dev/null || {
+    echo -e "${YELLOW}Installing requests for update checks...${NC}"
+    pip3 install --user requests
+}
+
+# Make scripts executable
+chmod +x "$DAEMON_SCRIPT"
+chmod +x "$UPDATER_SCRIPT"
+
+# Create startup scripts
+cat > "$FACTORY_PATH/bin/start_sync_daemon.sh" << 'EOF'
+#!/bin/bash
+# Start the Claude auto-sync daemon
+python3 "$HOME/.factory/agents/auto_sync_daemon.py" &
+DAEMON_PID=$!
+echo "Started sync daemon with PID: $DAEMON_PID"
+echo $DAEMON_PID > "$HOME/.factory/logs/sync_daemon.pid"
+EOF
+
+chmod +x "$FACTORY_PATH/bin/start_sync_daemon.sh"
+
+cat > "$FACTORY_PATH/bin/start_updater.sh" << 'EOF'
+#!/bin/bash
+# Start the autonomous updater
+python3 "$HOME/.factory/agents/autonomous_updater.py"
+EOF
+
+chmod +x "$FACTORY_PATH/bin/start_updater.sh"
+
+# Stop script
+cat > "$FACTORY_PATH/bin/stop_sync.sh" << 'EOF'
+#!/bin/bash
+# Stop the sync daemon
+if [ -f "$HOME/.factory/logs/sync_daemon.pid" ]; then
+    PID=$(cat "$HOME/.factory/logs/sync_daemon.pid")
+    kill $PID 2>/dev/null
+    rm "$HOME/.factory/logs/sync_daemon.pid"
+    echo "Stopped sync daemon (PID: $PID)"
+else
+    echo "Sync daemon not running"
+fi
+EOF
+
+chmod +x "$FACTORY_PATH/bin/stop_sync.sh"
+
+# Crontab setup
+echo "Setting up automated cron jobs..."
+
+# Create crontab entry
+CRON_ENTRY=$(cat << 'EOF'
+# Claude-Droid Auto-Sync
+*/5 * * * * $HOME/.factory/bin/start_updater.sh > $HOME/.factory/logs/cron_updater.log 2>&1
+@reboot $HOME/.factory/bin/start_sync_daemon.sh > $HOME/.factory/logs/cron_startup.log 2>&1
+EOF
+)
+
+# Add to crontab if not already present
+(crontab -l 2>/dev/null | grep -v "Claude-Droid Auto-Sync"; echo "$CRON_ENTRY") | crontab -
+
+echo -e "${GREEN}Cron jobs configured:${NC}"
+echo "- Autonomous updater every 5 minutes"
+echo "- Auto-sync daemon starts at reboot"
+
+# Create systemd service (for newer macOS)
+SYSTEMD_SERVICE_DIR="$HOME/Library/LaunchAgents"
+SYSTEMD_PLIST_NAME="com.factory.claude-sync.plist"
+
+cat > "$SYSTEMD_SERVICE_DIR/$SYSTEMD_PLIST_NAME" << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.factory.claude-sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>$DAEMON_SCRIPT</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>$HOME/.factory/logs/launchd_stdout.log</string>
+    <key>StandardErrorPath</key>
+    <string>$HOME/.factory/logs/launchd_stderr.log</string>
+</dict>
+</plist>
+EOF
+
+# Load the LaunchAgent
+launchctl load "$SYSTEMD_SERVICE_DIR/$SYSTEMD_PLIST_NAME" 2>/dev/null || {
+    echo -e "${YELLOW}Note: LaunchAgent setup completed. May require manual load with:${NC}"
+    echo "launchctl load ~/Library/LaunchAgents/com.factory.claude-sync.plist"
+}
+
+# Start sync daemon
+echo -e "${GREEN}Starting sync daemon...${NC}"
+"$FACTORY_PATH/bin/start_sync_daemon.sh"
+
+# Test setup
+echo -e "${GREEN}Testing setup...${NC}"
+"$FACTORY_PATH/bin/start_updater.sh"
+
+# Show status
+echo -e "${GREEN}Setup complete!${NC}"
+echo ""
+echo "Commands:"
+echo "  Start daemon: $FACTORY_PATH/bin/start_sync_daemon.sh"
+echo "  Stop daemon:  $FACTORY_PATH/bin/stop_sync.sh"
+echo "  Run updater:  $FACTORY_PATH/bin/start_updater.sh"
+echo ""
+echo "Logs:"
+echo "  Sync log:     $FACTORY_PATH/logs/auto_sync.log"
+echo "  Update log:   $FACTORY_PATH/logs/autonomous_updates.log"
+echo "  Cron log:     $FACTORY_PATH/logs/cron_updater.log"
+echo ""
+echo -e "${GREEN}Auto-sync and autonomous updates are now active!${NC}"

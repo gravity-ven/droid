@@ -1,0 +1,271 @@
+2025-11-12 11:24:40,011 [INFO] Auto-sync daemon started
+2025-11-12 11:24:40,028 [INFO] Auto-sync daemon started
+2025-11-12 11:24:40,044 [INFO] Started monitoring /Users/spartan/Desktop/claude-repos/Claude_Code
+2025-11-12 11:24:41,577 [INFO] Started monitoring /Users/spartan/Desktop/claude-repos/Claude_Code
+2025-11-12 13:48:44,113 [INFO] Auto-sync daemon started
+2025-11-12 13:48:44,148 [INFO] Started monitoring /Users/spartan/Desktop/claude-repos/Claude_Code
+2025-11-12 14:58:50,016 [INFO] __main__] Starting auto-sync daemon...
+2025-11-12 14:58:50,016 [INFO] __main__] Starting auto-sync daemon...
+2025-11-12 14:58:50,139 [INFO] __main__] Setting up main branch...
+2025-11-12 14:58:50,139 [INFO] __main__] Setting up main branch...
+2025-11-12 14:58:50,169 [INFO] __main__] Changes detected: M agents/agent_parallel_executor.py
+ M agents/parallel_task_scheduler.py
+ M claude_sync/.sync_healthy
+ M droids/claude_droid_config.json
+ M settings.json
+?? scripts/
+2025-11-12 14:58:50,169 [INFO] __main__] Changes detected: M agents/agent_parallel_executor.py
+ M agents/parallel_task_scheduler.py
+ M claude_sync/.sync_healthy
+ M droids/claude_droid_config.json
+ M settings.json
+?? scripts/
+2025-11-12 14:58:50,214 [INFO] __main__] Successfully committed changes
+2025-11-12 14:58:50,214 [INFO] __main__] Successfully committed changes
+2025-11-12 14:58:52,087 [INFO] __main__] Setting up main branch...
+2025-11-12 14:58:52,114 [INFO] __main__] Changes detected: M claude_sync/.sync_healthy
+2025-11-12 14:58:52,148 [INFO] __main__] Successfully committed changes
+2025-11-12 15:01:35,212 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Password for 'https://%7F%7Fher%7F%7F%7F@github.com': Input/output error
+
+2025-11-12 15:01:35,212 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Password for 'https://%7F%7Fher%7F%7F%7F@github.com': Input/output error
+
+2025-11-12 15:02:05,683 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:02:05,683 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:02:36,083 [WARNING] __main__] Git command failed (attempt 3): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:02:36,083 [WARNING] __main__] Git command failed (attempt 3): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:02:36,083 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:02:36,083 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:02:36,117 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:02:36,117 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:06,142 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:06,142 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,158 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,158 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,158 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,158 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,199 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:03:36,199 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:06,218 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:06,218 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:36,239 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:36,239 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:36,240 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:36,240 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:04:36,241 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:04:36,241 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:09:36,315 [INFO] __main__] Setting up main branch...
+2025-11-12 15:09:36,315 [INFO] __main__] Setting up main branch...
+2025-11-12 15:09:36,349 [INFO] __main__] Changes detected: MM claude_sync/.sync_healthy
+M  claude_sync/state/status_report.json
+ M settings.json
+?? .sync_config.json
+?? agents/claude_agency_trading_agent.py
+?? agents/claude_watcher_system_agent.py
+?? skills/
+2025-11-12 15:09:36,349 [INFO] __main__] Changes detected: MM claude_sync/.sync_healthy
+M  claude_sync/state/status_report.json
+ M settings.json
+?? .sync_config.json
+?? agents/claude_agency_trading_agent.py
+?? agents/claude_watcher_system_agent.py
+?? skills/
+2025-11-12 15:09:36,388 [INFO] __main__] Successfully committed changes
+2025-11-12 15:09:36,388 [INFO] __main__] Successfully committed changes
+2025-11-12 15:09:36,786 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:09:36,786 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:10:07,240 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:10:07,240 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:10:47,974 [WARNING] __main__] Git command failed (attempt 3): fatal: unable to access 'https://github.com/gravity-ven/Droid_Settings.git/': Failed to connect to github.com port 443 after 10657 ms: Couldn't connect to server
+
+2025-11-12 15:10:47,974 [WARNING] __main__] Git command failed (attempt 3): fatal: unable to access 'https://github.com/gravity-ven/Droid_Settings.git/': Failed to connect to github.com port 443 after 10657 ms: Couldn't connect to server
+
+2025-11-12 15:10:47,974 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:10:47,974 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:10:48,043 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:10:48,043 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:18,071 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:18,071 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,098 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,098 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,099 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,099 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,139 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:11:48,139 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:18,160 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:18,160 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:48,188 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:48,188 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:48,188 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:48,188 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:12:48,190 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:12:48,190 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:17:48,264 [INFO] __main__] Setting up main branch...
+2025-11-12 15:17:48,264 [INFO] __main__] Setting up main branch...
+2025-11-12 15:17:48,301 [INFO] __main__] Changes detected: M .sync_config.json
+ M agents/claude_agency_trading_agent.py
+ M agents/claude_watcher_system_agent.py
+MM claude_sync/.sync_healthy
+M  claude_sync/state/status_report.json
+ M droids/claude_droid_config.json
+?? droids/team_decisions.json
+2025-11-12 15:17:48,301 [INFO] __main__] Changes detected: M .sync_config.json
+ M agents/claude_agency_trading_agent.py
+ M agents/claude_watcher_system_agent.py
+MM claude_sync/.sync_healthy
+M  claude_sync/state/status_report.json
+ M droids/claude_droid_config.json
+?? droids/team_decisions.json
+2025-11-12 15:17:48,339 [INFO] __main__] Successfully committed changes
+2025-11-12 15:17:48,339 [INFO] __main__] Successfully committed changes
+2025-11-12 15:17:48,728 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:17:48,728 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:18:19,175 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:18:19,175 [WARNING] __main__] Git command failed (attempt 2): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:18:49,620 [WARNING] __main__] Git command failed (attempt 3): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:18:49,620 [WARNING] __main__] Git command failed (attempt 3): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:18:49,621 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:18:49,621 [WARNING] __main__] Large repository detected, attempting chunked push...
+2025-11-12 15:18:49,663 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:18:49,663 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:19,686 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:19,686 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,707 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,707 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,708 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,708 [ERROR] __main__] Failed to commit chunk 1: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,747 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:19:49,747 [WARNING] __main__] Git command failed (attempt 1): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:19,770 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:19,770 [WARNING] __main__] Git command failed (attempt 2): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:49,793 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:49,793 [WARNING] __main__] Git command failed (attempt 3): /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:49,794 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:49,794 [ERROR] __main__] Failed to commit chunk 2: /bin/sh: -c: line 0: unexpected EOF while looking for matching `"'
+/bin/sh: -c: line 1: syntax error: unexpected end of file
+
+2025-11-12 15:20:49,795 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:20:49,795 [INFO] __main__] Successfully synced to GitHub
+2025-11-12 15:25:49,865 [INFO] __main__] Setting up main branch...
+2025-11-12 15:25:49,865 [INFO] __main__] Setting up main branch...
+2025-11-12 15:25:49,896 [INFO] __main__] Changes detected: M .sync_config.json
+ M agents/claude_agency_trading_agent.py
+ M claude_sync/.sync_healthy
+ M claude_sync/state/status_report.json
+2025-11-12 15:25:49,896 [INFO] __main__] Changes detected: M .sync_config.json
+ M agents/claude_agency_trading_agent.py
+ M claude_sync/.sync_healthy
+ M claude_sync/state/status_report.json
+2025-11-12 15:25:49,931 [INFO] __main__] Successfully committed changes
+2025-11-12 15:25:49,931 [INFO] __main__] Successfully committed changes
+2025-11-12 15:25:50,331 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+
+2025-11-12 15:25:50,331 [WARNING] __main__] Git command failed (attempt 1): fatal: could not read Username for 'https://github.com': Device not configured
+

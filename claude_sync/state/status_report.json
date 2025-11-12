@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-11-12T15:20:00.536200",
+  "directory_status": {
+    ".claude": {
+      "type": "directory",
+      "file_count": 0
+    },
+    "agents": {
+      "type": "directory",
+      "file_count": 16
+    },
+    "state": {
+      "type": "directory",
+      "file_count": 1
+    },
+    "statsig": {
+      "type": "directory",
+      "file_count": 4
+    },
+    "shell-snapshots": {
+      "type": "directory",
+      "file_count": 2
+    },
+    "histories": {
+      "type": "directory",
+      "file_count": 0
+    },
+    "todos": {
+      "type": "directory",
+      "file_count": 2
+    },
+    "downloads": {
+      "type": "directory",
+      "file_count": 0
+    },
+    "backups": {
+      "type": "directory",
+      "file_count": 0
+    },
+    "stats": {
+      "type": "directory",
+      "file_count": 0
+    },
+    "debug": {
+      "type": "directory",
+      "file_count": 4
+    }
+  },
+  "sync_status": {
+    "status": "active",
+    "last_health_check": "2025-11-12T15:20:00.419453",
+    "direction": "bidirectional"
+  },
+  "health_status": {
+    "status": "healthy",
+    "issues": [],
+    "free_space_mb": 167378
+  },
+  "optimizations": {
+    "status": "not_optimized"
+  }
+}

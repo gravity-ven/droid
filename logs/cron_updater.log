@@ -1,0 +1,6 @@
+/Users/spartan/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+2025-11-12 15:25:00,497 [INFO] Starting autonomous update cycle
+2025-11-12 15:25:02,840 [ERROR] Failed to check configuration: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:25:02,841 [ERROR] Failed security check: Expecting value: line 1 column 1 (char 0)
+2025-11-12 15:25:02,841 [INFO] No updates available

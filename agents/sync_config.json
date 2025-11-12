@@ -1,0 +1,29 @@
+{
+  "sync_interval": 10,
+  "git_sync_interval": 60,
+  "auto_commit": true,
+  "auto_push": true,
+  "backup_enabled": true,
+  "max_backups": 20,
+  "watch_patterns": [
+    "**/*.sh",
+    "**/*.py",
+    "**/*.json",
+    "**/*.yaml",
+    "**/*.yml"
+  ],
+  "ignore_patterns": [
+    ".git/**",
+    "**/__pycache__/**",
+    "**/*.pyc",
+    "**/.DS_Store",
+    "**/logs/**",
+    "**/node_modules/**"
+  ],
+  "sync_mappings": {
+    "hooks/*.sh": "droids/",
+    "watchers/*.py": "watchers/",
+    "watchers/*.sh": "watchers/",
+    "settings.json": "settings.json(auto-merge)"
+  }
+}

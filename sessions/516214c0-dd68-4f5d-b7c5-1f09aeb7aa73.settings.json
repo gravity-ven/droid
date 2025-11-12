@@ -1,0 +1,13 @@
+{
+  "assistantActiveTimeMs": 51657,
+  "providerLock": "factory",
+  "providerLockTimestamp": "2025-11-12T03:02:07.131Z",
+  "apiProviderLock": "fireworks",
+  "tokenUsage": {
+    "inputTokens": 6723,
+    "outputTokens": 2067,
+    "cacheCreationTokens": 0,
+    "cacheReadTokens": 343063,
+    "thinkingTokens": 0
+  }
+}
